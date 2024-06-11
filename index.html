@@ -20,7 +20,7 @@
                         <p class="content__text text">За 18 лет деятельности было реализовано более 500 крупных, а так
                             же, не менее 2500 средних и малых проектов. Используя
                             знания и накопленный опыт мы можем предложить</p>
-                        <button class="content__button btn">
+                        <button id="openModalBtn" class="content__button btn">
                             <div>Попробовать бесплатно</div>
                             <div><img class="icon" src="img/icon.svg" alt="icon"></div>
                         </button>
@@ -31,21 +31,24 @@
                 </div>
             </div>
         </div>
-        <div class="modal">
+        <div class="modal" id="dynamicModal">
             <div class="modal__content">
-                <span class="close" id="closeBtn"><img src="" alt=""></span>
-                <h2 class="modal__title">Войти в систему</h2>
-                <form>
-                    <input type="text" placeholder="Email/Телефон" required>
-                    <input type="password" placeholder="Пароль" required>
-                    <div class="checkbox-container">
-                        <input type="checkbox" id="rememberMe">
-                        <label for="rememberMe">Запомнить пароль</label>
-                    </div>
-                    <a href="#" class="restore">Восстановить</a>
-                    <button type="submit">Войти</button>
-                    <button type="button" class="register">Зарегистрироваться</button>
-                </form>
+                <div class="close" id="closeBtn"><img src="img/close.svg" alt="close"></div>
+                <!-- <h2 class="modal__title">Войти в систему</h2> -->
+                <div id="modalBody">
+                    <form>
+                        <input type="text" placeholder="Email/Телефон" required>
+                        <input type="password" placeholder="Пароль" required>
+                        <div class="checkbox-container">
+                            <input type="checkbox" id="rememberMe">
+                            <label for="rememberMe">Запомнить пароль</label>
+                        </div>
+                        <a href="#" class="restore">Восстановить</a>
+                        <button type="submit" class="login">Войти</button>
+                        <button type="button" class="register">Зарегистрироваться</button>
+                    </form>
+                </div>
+
             </div>
         </div>
     </div>
