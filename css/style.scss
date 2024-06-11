@@ -1,0 +1,166 @@
+body {
+    font-family: 'Manrope';
+    font-size: 17px;
+    color: #727272;
+}
+
+/* для всех объектов, где используется данный класс */
+[class*="__container"] {
+    max-width: 1950px;
+    margin: 0 auto;
+    padding: 0px 15px;
+}
+
+@media (max-width: 1950px) {
+    [class*="__container"] {
+        max-width: 1440px;
+    }
+}
+
+@media (max-width:1439.98px) {
+    [class*="__container"] {
+        max-width: 768px;
+    }
+}
+
+@media (max-width:767.98px) {
+    [class*="__container"] {
+        max-width: 375px;
+    }
+}
+
+/*---------------------------------*/
+
+
+
+/*----------------------------------*/
+
+.wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.page {
+    flex: 1 1 auto;
+    padding: 36px 25px;
+
+    @media(max-width:767.98px) {
+        padding: 24px 9px;
+    }
+
+    @media(max-width:375px) {
+        padding: 14px 9px;
+    }
+}
+
+.content {
+    background-color: #EBF0FA;
+    height: 455px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+
+    @media(max-width: 1439.98px) {
+        flex-direction: column;
+    }
+
+
+    &__text-content {
+        margin-left: 72px;
+        text-align: left;
+        max-width: 511px;
+
+        @media(max-width:1439.98px) {
+            margin-left: 0px;
+            padding: 24px;
+        }
+
+        .title {
+            color: #1F4284;
+            font-weight: 500;
+            font-size: 30px;
+            line-height: 1.6;
+            margin-bottom: 18px;
+
+            @media(max-width:1439.98px) {
+                font-size: 26px;
+            }
+
+            @media(max-width:768.98px) {
+                font-size: 20px;
+            }
+
+            @media(max-width:375px) {
+                font-size: 17px;
+                margin-bottom: 14px;
+            }
+        }
+
+        .text {
+            line-height: 1.6;
+            margin-bottom: 36px;
+
+            @media(max-width:768.98px) {
+                font-size: 15px;
+                margin-bottom: 24px;
+            }
+
+            @media(max-width:375px) {
+                font-size: 13px;
+                margin-bottom: 18px;
+
+            }
+        }
+
+        .btn {
+            padding: 12px;
+            background-color: #1F4284;
+            border-radius: 60px;
+            align-items: center;
+            gap: 48px;
+            display: flex;
+
+            @media(max-width:768.98px) {
+                padding: 10px;
+                text-align: left;
+                gap: 17px;
+
+                .icon {
+                    width: 36px
+                }
+
+            }
+
+            @media(max-width:375px) {
+                text-align: center;
+                gap: 5px;
+            }
+
+            div {
+                color: #fff;
+                font-size: 18px;
+                font-weight: 500;
+                line-height: 1.6;
+
+                @media(max-width:768.98px) {
+                    font-size: 15px;
+                }
+
+                @media(max-width:375px) {
+                    font-size: 15px;
+                }
+            }
+        }
+
+    }
+
+    &__image-content {
+        //  flex: 0 1 50%;
+
+        img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+    }
+}
