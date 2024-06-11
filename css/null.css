@@ -1,0 +1,105 @@
+* {
+    padding: 0;
+    /*внутренний отступ*/
+    margin: 0;
+    /*внешний отступ*/
+    border: 0;
+}
+
+*,
+*:before,
+*:after {
+    /*меняет подсчет параметров бокса для верстки*/
+    -moz-box-sizing: border-box;
+    -webkiit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/*убираем линии обводки у некоторох браузеров*/
+:focus,
+:active {
+    outline: none;
+}
+
+a:focus,
+a:active {
+    outline: none;
+}
+a,
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+/*делаем хтмл тэги блочными */
+nav,
+footer,
+header,
+aside {
+    display: block;
+}
+
+html,
+body {
+    /*уравнивают поведени шрифтов и элемнетов в некоторых браузерах, запрещают самовольное увеличение шрифта */
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+    font-family: inherit;
+}
+
+/*наследование семейства шрифта*/
+
+input::-ms-clear {
+    display: none;
+}
+
+/*убирают некоторые особенности в разных браузерах*/
+button {
+    cursor: poiter;
+}
+
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+h1,
+h1,
+h3,
+h4,
+h5,
+h6 {
+    font-size: inherit;
+    font-weight: 400;
+}
